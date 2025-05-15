@@ -4,7 +4,7 @@ let img, baseImgW, baseImgH;
 let smoothX = 0, smoothY = 0, smoothSize = 100;
 
 function setup() {
-  createCanvas(640, 480);
+  createCanvas(150, 480);
   video = createCapture(VIDEO);
   video.size(640, 480);
   video.hide();
