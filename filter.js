@@ -4,11 +4,11 @@ let img, baseImgW, baseImgH;
 let smoothX = 0, smoothY = 0, smoothSize = 100;
 
 function setup() {
-  createCanvas(150, 480);
+  createCanvas(640, 480);
+  canvas.center();
   video = createCapture(VIDEO);
   video.size(640, 480);
   video.hide();
-  video.center();
   posenet = ml5.poseNet(video, modelReady);
   posenet.on('pose', gotPoses);
 }
